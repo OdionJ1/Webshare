@@ -1,0 +1,180 @@
+/*Header section*/
+.navbar-default {
+    background-color: royalblue;
+    border: 0;
+    border-radius: 0;
+  }
+  .navbar-default .navbar-brand {
+    color: #fff;
+  }
+  .navbar-default .navbar-brand:hover,
+  .navbar-default .navbar-brand:focus {
+    color: #f2f2f2;
+    background-color: transparent;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    color: #fff;
+  }
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+    color: #f2f2f2;
+    background-color: transparent;
+  }
+
+
+  /*footer section*/
+  footer {
+      background-color: royalblue;
+      color: #fff;
+      padding-top: 15px;
+  }
+
+
+  /*Main section*/
+  .upload_area, .newest_images_area, .profile_area, .chat_area, .recovery_area {
+      border: 1px solid royalblue;
+      border-radius: 5px;
+      margin-bottom: 5vh;
+      min-height: 37vh;
+      padding: 10px;
+      padding-top: 0;
+  }
+
+  .stats_area, .popular_images_area, .latest_comments_area, .comment_area{
+    border: 1px solid royalblue;
+    border-radius: 5px;
+    margin-bottom: 5vh;
+    min-height: 27vh;
+    padding: 10px;
+    padding-top: 0;
+  }
+
+  .upload_area input, .upload_area textarea {
+    border: 1px solid royalblue;
+  }
+
+   h4 {
+    border-bottom: 1px solid royalblue;
+    padding-bottom: 5px
+  }
+
+  .upload_area img, .modal-body img{
+    display: block;
+    margin: 5px auto;
+    max-height: 450px;
+  }
+
+  .newest_images_area img{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 5px;
+
+  }
+  .popular_images_area img{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 5px;
+
+  }
+
+  .latest_comments_area img{
+    width: 35px;
+    height: 35px;
+
+  }
+
+  .login_area {
+    background-color: #d1dffa;
+    min-height: 92vh;
+    padding-top: 15vh;
+    padding-bottom: 7vh;
+    padding: 15vh 7vw 7vh 7vw;
+  }
+
+  .login_area form {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0px 2px 10px 2px #777;
+  }
+
+  .modal-body form {
+    background: none;
+    border-radius: none;
+    box-shadow: none;
+    padding: none;
+  }
+
+  .logo {
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #fff
+  }
+
+  .chat_area {
+    min-height: 80vh
+  }
+
+  .chat_room {
+    height: 450px;
+    background-color: whitesmoke;
+    overflow: scroll;
+  }
+
+  .userMessage, .myMessage, .serverMessage {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    max-width: 80%;
+    float: left;
+    display: block;
+    clear: both;
+  }
+
+  .userMessage {
+    background-color: lightpink;
+    border-radius: 25px 50px;
+    border-top-left-radius: 0px;
+  }
+
+  .myMessage{
+    background-color: lightblue;
+    float: right;
+    border-radius: 50px 25px;
+    border-top-right-radius: 0px;
+  }
+
+  .serverMessage{
+    background-color: lightgreen;
+    border-radius: 25px 50px;
+    border-top-left-radius: 0px;
+    color: white;
+  }
+
+  .accountDelete {
+    color: #f00 !important;
+    font-weight: bold;
+    background: #eee;
+  }
+
+  .accountDelete:hover {
+    color: #fff !important;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+  }
+
+  .accountDelete[disabled ="disabled"]:hover{
+    color: #f00 !important;
+    background: #eee !important;
+  }
+
+  .recovery_area {
+    background: #fff;
+  }
+
+  .recovery_area form{
+    background: none;
+    box-shadow: none !important;
+    border-radius: none;
+    padding: none;
+  }

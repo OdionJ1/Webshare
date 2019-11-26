@@ -1,0 +1,17 @@
+<section class="recovery_area">
+    <h2>Find Your Account</h2>
+    <hr />
+    {{#if recoveryError}}
+      <div class="alert alert-danger">{{recoveryError}} <span class="close" data-dismiss="alert">&times;</span></div>
+    {{/if}}
+    <form method="post" action="/search">
+        <div class="form-group">
+            <label for="email">Please enter your email to search for your account</label>
+            <input type="text" name="email" placeholder="Enter email address" id="eamil" class="form-control">
+        </div>
+        <div class="form-group text-right">
+            <button type="submit" class="btn btn-primary">Search</button>
+            <button type="reset" class="btn btn-default"><a href="/">Cancel</a></button>
+        </div>
+    </form>
+</section>

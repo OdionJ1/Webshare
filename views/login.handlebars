@@ -1,0 +1,94 @@
+{{#if resetSuccess}}
+      <div class="alert alert-success">{{resetSuccess}} <span class="close" data-dismiss="alert">&times;</span></div>
+{{/if}}
+
+<section class="col-md-7">
+  <h1 class="logo text-primary">Webshare</h1>
+  <h3>Share images from your favorite places and experiences with friends all round the world </h3>
+  <img src="/public/images/background-image.png" />
+</section>
+<section class="col-md-5">
+    <form method="post" action="/login" class="form-horizontal" role="form">
+    {{#if loginError}}
+      <div class="alert alert-danger">{{loginError}} <span class="close" data-dismiss="alert">&times;</span></div>
+    {{/if}}
+
+  <div class="form-group">
+    <div class="col-sm-12">
+      <input name="email" type="email" class="form-control" id="email" placeholder="Email" required>
+    </div>
+  </div>
+
+    <div class="form-group">
+    <div class="col-sm-12">
+      <input name="password" type="password" class="form-control" id="password" placeholder="Password" required>
+    </div>
+  </div>
+
+  <div class="form-group text-center">
+    <div class="col-sm-12">
+      <button type="submit" class="btn btn-primary btn-block">Log in</button>
+    </div>
+  </div>
+  <p class="text-center"><a href="/recover">Forgotten password</a></p>
+  <hr/>
+  <div class="form-group text-center ">
+    <div class="col-sm-12">
+      <button type="submit" class="btn btn-success btn-create">Create New Account</button>
+    </div>
+  </div>
+</form>
+</section>
+
+<div class="modal fade" id="signupModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h1 class="modal-title">Sign up</h1>
+        <p>It's quick and easy</p>
+      </div>
+      <div class="modal-body">
+        <form method="post" action="/signup" class="form-horizontal" role="form" id="signupForm">
+        <div class="form-group row">
+          <div class="col-sm-6">
+            <input name="firstname" type="text" class="form-control input-lg" id="firstname" placeholder="First name" required>
+            <p class="text-danger" id="firstname_text"></p>
+          </div>
+          <div class="col-sm-6">
+            <input name="surname" type="text" class="form-control input-lg" id="surname" placeholder="Surname" required>
+            <p class="text-danger" id="surname_text"></p>
+          </div>
+        </div>
+
+          <div class="form-group">
+            <div class="col-sm-12">
+            <input name="email" type="email" class="form-control input-lg" id="signup_email" placeholder="Email" required>
+            <p class="text-danger" id="email_text"></p>
+          </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-12">
+            <input name="password" type="password" class="form-control input-lg" id="signup_password" placeholder="New Password" required>
+            <p class="text-danger" id="password_text"></p>
+          </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-12">
+            <input name="confirmpassword" type="password" class="form-control input-lg" id="confirmpassword" placeholder="Confirm Password" required>
+            <p class="text-danger" id="confirmpassword_text"></p>
+          </div>
+          </div>
+
+        <div class="form-group text-center">
+          <div class="col-sm-12">
+            <button type="submit" class="btn btn-primary btn-block">Sign up</button>
+          </div>
+        </div>
+      </form>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

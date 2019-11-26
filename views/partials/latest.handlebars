@@ -1,0 +1,22 @@
+<section class="latest_comments_area">
+    <h4 title="latest comments">Latest Comments</h4>
+     <ul class="media-list">
+    {{#if sidebar.comments}}
+    {{#each sidebar.comments}}
+        <li class="media">
+          <a class="pull-left" href="/image/{{image.uniqueId}}">
+            <img class="media-object" src="/public/upload/{{image.filename}}" alt="{{image.description}}">
+          </a>
+          <div class="media-body">
+            {{comment}} <br />
+            <strong class="media-heading">{{name}}</strong>
+            <small>{{timeago timestamp}}</small>
+          </div>
+        </li>
+    {{/each}}
+   {{else}}
+      <p class="text-muted">Latest comments will show up here</p> 
+  {{/if}}
+</ul>
+
+</section>
